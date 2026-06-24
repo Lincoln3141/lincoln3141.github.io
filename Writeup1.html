@@ -44,7 +44,7 @@ After some googling of the next.js version, I found it is vulnerable to CVE=####
    <img src="images2/db3.png">
    <p>We get some md5 password hashes! copying these over to https://crackstation.net/ we are able to reveal the password for one of the two hashes. The reveled password for the ######## account is ########</p>
    <img src="images2/station.png">
-   <p>Testing ssh with this password for the engineer user we get logged in and we are able to get the user.txt flag.</p>
+   <p>Testing ssh with this password for the ######## user we get logged in and we are able to get the user.txt flag.</p>
    <img src="images2/ssh.png">
    <p>After not finding any SUID binaries or cron jobs I did some enumeration of open ports and looking through processes. I was able to find that there is a node debugging interface bound to the loopback address on port 9229. this process was owned by root so if I can get into it then I could run some commands as root.</p>
    <img src="images2/ps.png">
