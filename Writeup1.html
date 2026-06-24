@@ -37,7 +37,7 @@ After some googling of the next.js version, I found it is vulnerable to CVE=####
    <p>After inspecting a POC on github, witch basically just sends a single specially crafted request to the server, I was able to run a reverse shell. The first few shells I tried wouldnt connect but after creating a web cradle for the reverse shell the RCE was achived</p>
    <img src="images2/poc1.png">
    <img src="images2/poc2.png">
-   <p>We are now connected to the target box as the #### user. just under our nose we find a few config and database files. I was able to exfiltrate the R3&(T0R.db file to my host machine to inspect it. Trying to inspect it through the unstable reverse shell was finnicky.</p>
+   <p>We are now connected to the target box as the #### user. just under our nose we find a few config and database files. I was able to exfiltrate the #######.db file to my host machine to inspect it. Trying to inspect it through the unstable reverse shell was finnicky.</p>
    <img src="images2/db1.png">
    <img src="images2/db2.png">
    <p>I was able to figure that this is an sqlite 3.x database file by running the file command on the .db file. I then used SQLiteBrowser to have a look at the DB</p>
