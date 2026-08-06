@@ -116,7 +116,7 @@ footer {
     display: none;
     position: absolute;
     background-color: #262623;
-    min-width: 160px;
+    min-width: 100px;
     border: 0px;
     z-index: 1;
     padding: 9%;
